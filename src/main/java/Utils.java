@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Utils {
 
-    public static int[][] createMatrix(int a, int b) {
+    public static int[][] fillMatrixWithRandomInt(int a, int b) {
         int[][] arr = new int[a][b];
         for (int i = 0; i < a; i++) {
             for (int j = 0; j < b; j++) {
@@ -22,8 +22,8 @@ public class Utils {
         }
     }
 
-    public static int scan() {
-        System.out.println("Введите простое число");
+    public static int scan(String message) {
+        System.out.println(message);
         Scanner scan = new Scanner(System.in);
         while (!scan.hasNextInt()) {
             scan.next();
