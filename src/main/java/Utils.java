@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Utils {
+
+    public static int[][] createMatrix(int a, int b) {
+        int[][] arr = new int[a][b];
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < b; j++) {
+                arr[i][j] = (int) (Math.random() * 101);
+            }
+        }
+        return arr;
+    }
+
+    public static void printMatrix(int[][] arr) {
+        System.out.println("Сгенерированная матрица");
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
+
+    public static int scan() {
+        System.out.println("Введите простое число");
+        Scanner scan = new Scanner(System.in);
+        while (!scan.hasNextInt()) {
+            scan.next();
+        }
+        return scan.nextInt();
+    }
+}
