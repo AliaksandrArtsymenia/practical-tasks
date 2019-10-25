@@ -1,4 +1,4 @@
-public class Task5 {
+public class Unit5 {
     public static void main(String[] args) {
         int matrixSize = Utils.scan("Введите чётное число");
         int[][] arr = new int[matrixSize][matrixSize];
